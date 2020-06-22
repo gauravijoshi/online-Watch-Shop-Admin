@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cat1</title>
+</head>
+<body>
+  <img class="center" width="300px" height="200px" src="assets/logo1.png" alt="">
+  <br>
+    <table class="table" >
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Product name</th>
+            <th scope="col">Product description</th>
+            <th scope="col">Product price</th>
+            <th scope="col">Product category</th>
+            <th scope="col">Product stock</th>
+            <th scope="col">Product image</th>
+            <th scope="col">Operations</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr *ngFor="let i of products">
+            <td scope="row">{{i.name}}</td>
+            <td scope="row">{{i.description}}</td>
+            <td scope="row">{{i.price}}</td>
+            <td scope="row">{{i.category}}</td>
+            <td scope="row">{{i.stock}}</td>
+            <td scope="row">{{i.productImagePath}}</td>
+            <a routerLink="/update-pro/{{i._id}}"> 
+            <td scope="row"><a class="btn btn-warning" role="button">Update</a></td>
+          </a>
+          <a routerLink="/delete-pro/{{i._id}}"> 
+            <td scope="row"><a class="btn btn-danger" role="button">Delete</a></td>
+          </a>
+          </tr>
+
+        </tbody>
+      </table>
+</body>
+</html>
+  
+  

@@ -1,0 +1,88 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+
+
+.row .container {
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+.row .container h2 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.row .container hr {
+    height: 1px;
+    background: rgba(114, 114, 114, 0.548);
+}
+
+.center {
+    margin: auto;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+form {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+form div .frgpwwsd {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: rgb(148, 148, 148);
+}
+
+.frgpwwsd:hover{
+    color: rgb(26, 77, 134);
+    text-decoration: none;
+}
+
+form div .btn-custom-login{
+    margin-bottom: 20px;
+}
+
+form div .btn-custom-register{
+    margin-bottom: 20px;
+}
+
+form div .btn-custom-login:hover {
+    box-shadow: 0 4px 8px 0 rgba(104, 104, 104, 0.2), 0 6px 20px 0 rgba(124, 124, 124, 0.19);
+    background: green;
+    border-color: green;
+}
+
+form div .btn-custom-register:hover {
+    box-shadow: 0 4px 8px 0 rgba(104, 104, 104, 0.2), 0 6px 20px 0 rgba(124, 124, 124, 0.19);
+    background: green;
+    border-color: green;
+}
+
+
+form div .newuser {
+    text-align: center;
+    color: gray;
+    font-weight: 600;
+}
+
+a span:hover {
+    color: blue;
+    text-decoration: none;
+}

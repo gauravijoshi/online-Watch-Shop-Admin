@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cat1</title>
+</head>
+<body>
+  <img class="center" width="300px" height="200px" src="assets/logo1.png" alt="">
+  <br>
+    <table class="table" >
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Categories</th>
+            <th scope="col">Operations</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr *ngFor="let i of categories">
+            <td scope="row">{{i.name}}</td>
+            <a routerLink="/update-cat/{{i._id}}"> 
+            <td scope="row"><a class="btn btn-warning" role="button">Update</a></td>
+          </a>
+          <a routerLink="/delete-cat/{{i._id}}"> 
+            <td scope="row"><a class="btn btn-danger" role="button">Delete</a></td>
+          </a>
+          </tr>
+
+        </tbody>
+      </table>
+</body>
+</html>
+  
+  

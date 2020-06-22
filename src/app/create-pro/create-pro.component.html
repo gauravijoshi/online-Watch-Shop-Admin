@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <title>Create-Pro</title>
+   </head>
+<body>
+    <img class="center" width="300px" height="200px" src="assets/logo1.png" alt="">
+    <br>
+    <div class="row">
+        <div class="container center " >
+            <form #postForm="ngForm" (ngSubmit)="onCreatePost(postForm.value)">
+                <h2>Create New Product</h2>
+                <hr>
+                <div class="form-group">
+                <label for="">product name</label>
+                <input class="form-control" ngModel type="text" name="name" placeholder="Product name" id="">
+                <label for="">product description</label>
+                <input class="form-control" ngModel type="text" name="description" placeholder="Product description" id="">
+                <label for="">product price</label>
+                <input class="form-control" ngModel type="number" name="price" placeholder="Product price" id="">
+                <label for="">product category</label>
+                <input class="form-control" ngModel type="text" name="category" placeholder="Product category" id="">
+                <label for="">product stock</label>
+                <input class="form-control" ngModel type="number" name="stock" placeholder="Product stock" id="">
+                <label for="">product image</label>
+                <input class="form-control" ngModel type="file" name="productImagePath" placeholder="Product image" id="">
+            </div>
+                
+                <div class="form-group btn-block" >
+                    <button type="submit" class="btn btn-block btn-primary btn-custom-register" >Submit</button>
+                    
+                </div>
+            </form>
+            
+        </div>
+    </div>
+
+
+</body>
+</html>

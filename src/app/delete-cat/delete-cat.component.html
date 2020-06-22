@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>Delete-Cat</title>
+   </head>
+<body>
+    <img class="center" width="300px" height="200px" src="assets/logo1.png" alt="">
+    <br>
+    <div class="row">
+        <div class="container center " >
+            <form #postForm="ngForm" (ngSubmit)="onDeletePost(postForm.value)">
+                <h2>Delete Category</h2>
+                <hr>
+                <div class="form-group" >
+                <label for="">category name</label>
+                <h2>Are you sure you want to delete category? </h2>
+                </div>
+                
+                <div class="form-group btn-block" >
+                    <button type="submit" class="btn btn-block btn-primary btn-custom-register" >Proceed</button>
+                    
+                </div>
+            </form>
+            
+        </div>
+    </div>
+
+
+</body>
+</html>
